@@ -1,6 +1,6 @@
 # Savings Goals App
 
-This React app allows you create your savings goals and keep track of your progress.
+This React app allows you create savings goals and keep track of your progress.
 
 ## Live demo
 
