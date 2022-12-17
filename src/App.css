@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+:root {
+  --main-bg-image: linear-gradient(
+    109.6deg,
+    rgba(62, 161, 219, 1) 11.2%,
+    rgba(93, 52, 236, 1) 100.2%
+  );
+  --primary-color: #4e7ada;
+  --primary-hover-color: #476dc0;
+  --secondary-color: #c6d5f5;
+  --secondary-hover-color: #b1c4e9;
+  --CTA-color: #22a1eb;
+  --CTA-hover-color: #1a89c9;
+  --primary-text-color: #13203d;
+  --secondary-text-color: #97aad3;
+  --error-bg-color: #ecbbcb;
+  --error-text-color: #b32451;
+  --progress-bar-trail-color: #e0e5f1;
+  --shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input::placeholder {
+  color: var(--secondary-text-color);
 }
