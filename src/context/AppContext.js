@@ -8,6 +8,7 @@ const goalExample = [{ id: 123, title: "Holiday", target: 700, saved: 400 }];
 export function ContextProvider({ children }) {
   const [goals, setGoals] = useState(getInitialData());
   const [show, setShow] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
 
   useEffect(() => {
     localStorage.setItem("goalsData", JSON.stringify(goals));
@@ -39,6 +40,7 @@ export function ContextProvider({ children }) {
     setGoals(
       goals.map((item) => {
         if (item.id === id) {
+          checkIfComplete(target, saved);
           return { ...item, title: title, target: target, saved: saved };
         } else {
           return item;
@@ -47,9 +49,24 @@ export function ContextProvider({ children }) {
     );
   }
 
+  function checkIfComplete(target, saved) {
+    if (saved >= target) {
+      setShowConfetti(true);
+    }
+  }
+
   return (
     <AppContext.Provider
-      value={{ goals, show, setShow, addGoal, deleteGoal, editGoal }}
+      value={{
+        goals,
+        show,
+        setShow,
+        addGoal,
+        deleteGoal,
+        editGoal,
+        showConfetti,
+        setShowConfetti,
+      }}
     >
       {children}
     </AppContext.Provider>

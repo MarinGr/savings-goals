@@ -2,12 +2,25 @@ import { useContext } from "react";
 import styled from "styled-components";
 import AppContext from "../context/AppContext";
 import GoalCard from "./GoalCard";
+import Confetti from "react-confetti";
 
 export default function GoalsList() {
-  const { goals } = useContext(AppContext);
+  const { goals, showConfetti, setShowConfetti } = useContext(AppContext);
+
+  const width = window.innerWidth;
+  const height = window.innerHeight;
 
   return (
     <>
+      {showConfetti && (
+        <Confetti
+          width={width}
+          height={height}
+          numberOfPieces={500}
+          recycle={false}
+          onConfettiComplete={() => setShowConfetti(false)}
+        />
+      )}
       {goals.length === 0 ? (
         <NoGoalsContainer>You have no goals yet</NoGoalsContainer>
       ) : (
