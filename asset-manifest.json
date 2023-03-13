@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/savings-goals/static/css/main.b9b68f77.css",
-    "main.js": "/savings-goals/static/js/main.3f6c5ef1.js",
+    "main.js": "/savings-goals/static/js/main.56c885f7.js",
     "index.html": "/savings-goals/index.html",
     "main.b9b68f77.css.map": "/savings-goals/static/css/main.b9b68f77.css.map",
-    "main.3f6c5ef1.js.map": "/savings-goals/static/js/main.3f6c5ef1.js.map"
+    "main.56c885f7.js.map": "/savings-goals/static/js/main.56c885f7.js.map"
   },
   "entrypoints": [
     "static/css/main.b9b68f77.css",
-    "static/js/main.3f6c5ef1.js"
+    "static/js/main.56c885f7.js"
   ]
 }
