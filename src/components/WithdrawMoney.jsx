@@ -16,6 +16,7 @@ export default function WithdrawMoney(props) {
     }
     const sum = saved - Number(withdrawAmount);
     editGoal(id, title, target, sum);
+    props.onClose();
   }
 
   return (
