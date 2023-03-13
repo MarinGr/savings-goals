@@ -16,6 +16,7 @@ export default function EditGoalForm(props) {
       return;
     }
     editGoal(id, title, target, saved);
+    props.onClose();
   }
 
   return (

@@ -8,7 +8,6 @@ const goalExample = [{ id: 123, title: "Holiday", target: 700, saved: 400 }];
 export function ContextProvider({ children }) {
   const [goals, setGoals] = useState(getInitialData());
   const [show, setShow] = useState(false);
-  const [updatedGoal, setUpdatedGoal] = useState(0);
 
   useEffect(() => {
     localStorage.setItem("goalsData", JSON.stringify(goals));
@@ -18,12 +17,6 @@ export function ContextProvider({ children }) {
     const goalsData = localStorage.getItem("goalsData");
     return goalsData ? JSON.parse(goalsData) : goalExample;
   }
-
-  useEffect(() => {
-    if (updatedGoal) {
-      setGoals((prevGoals) => [...prevGoals, updatedGoal]);
-    }
-  }, [updatedGoal]);
 
   function addGoal(title, target) {
     setGoals((prevGoals) => [
@@ -43,15 +36,15 @@ export function ContextProvider({ children }) {
   }
 
   function editGoal(id, title, target, saved) {
-    const editedGoal = goals.find((goal) => goal.id === id);
-    setUpdatedGoal({
-      ...editedGoal,
-      title: title,
-      target: target,
-      saved: saved,
-    });
-    const filteredGoals = goals.filter((goal) => goal.id !== id);
-    setGoals(filteredGoals);
+    setGoals(
+      goals.map((item) => {
+        if (item.id === id) {
+          return { ...item, title: title, target: target, saved: saved };
+        } else {
+          return item;
+        }
+      })
+    );
   }
 
   return (

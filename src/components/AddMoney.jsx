@@ -16,6 +16,7 @@ export default function AddMoney(props) {
     }
     const sum = saved + Number(addAmount);
     editGoal(id, title, target, sum);
+    props.onClose();
   }
 
   return (
