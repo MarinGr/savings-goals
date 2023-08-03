@@ -1,6 +1,10 @@
 # Savings Goals App
 
-This React app allows you create savings goals and keep track of your progress.
+This app lets users to keep track of their savings goals progress. Includes additional dependencies such as react-circular-progressbar, react-confetti.
+
+## Stack
+
+React, Styled Components
 
 ## Live demo
 
