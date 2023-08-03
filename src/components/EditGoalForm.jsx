@@ -111,9 +111,9 @@ const Button = styled.button`
   border: 1px solid
     ${(props) => (props.save ? "none" : "var(--secondary-color)")};
   outline: none;
-  color: ${(props) => (props.save ? "#fff" : "var(--primary-color)")};
+  color: ${(props) => (props.save ? "var(--white)" : "var(--primary-color)")};
   background-color: ${(props) =>
-    props.save ? "var(--primary-color)" : "#fff"};
+    props.save ? "var(--primary-color)" : "var(--white)"};
 
   &:hover {
     background-color: ${(props) =>

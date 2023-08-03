@@ -26,7 +26,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--modal-bg-color);
   color: var(--primary-text-color);
   z-index: 10;
 `;
@@ -34,7 +34,7 @@ const Container = styled.div`
 const Content = styled.div`
   min-width: 320px;
   padding: 16px 24px;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 10px;
 `;
 

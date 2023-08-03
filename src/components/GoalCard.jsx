@@ -98,7 +98,7 @@ const Header = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: bold;
+  font-weight: 600;
 `;
 
 const GoalTitle = styled.h4``;
@@ -112,7 +112,7 @@ const Controls = styled.div`
 const ControlsBtn = styled.button`
   border: none;
   outline: none;
-  background-color: #fff;
+  background-color: var(--white);
   color: var(--secondary-text-color);
   font-size: 18px;
   transition: 0.4s ease;
@@ -129,6 +129,7 @@ const GoalDetails = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  margin-bottom: 40px;
 `;
 
 const AmountInfo = styled.div`
@@ -140,7 +141,7 @@ const AmountInfo = styled.div`
 const Target = styled.p`
   font-size: 24px;
   line-height: 1;
-  font-weight: bold;
+  font-weight: 600;
 `;
 
 const Saved = styled.p`

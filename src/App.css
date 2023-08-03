@@ -1,20 +1,18 @@
 :root {
-  --main-bg-image: linear-gradient(
-    109.6deg,
-    rgba(62, 161, 219, 1) 11.2%,
-    rgba(93, 52, 236, 1) 100.2%
-  );
-  --primary-color: #4e7ada;
-  --primary-hover-color: #476dc0;
-  --secondary-color: #c6d5f5;
-  --secondary-hover-color: #b1c4e9;
-  --CTA-color: #22a1eb;
-  --CTA-hover-color: #1a89c9;
-  --primary-text-color: #13203d;
-  --secondary-text-color: #97aad3;
+  --main-bg-image: linear-gradient(109.6deg, #06b7f9 11.2%, #194aec 91.1%);
+  --primary-color: #048edf;
+  --primary-hover-color: #0580c7;
+  --white: #fff;
+  --secondary-color: #c7e4f5;
+  --secondary-hover-color: #a5d6f3;
+  --CTA-color: #20aafa;
+  --CTA-hover-color: #1195e2;
+  --primary-text-color: #333;
+  --secondary-text-color: #71c1f0;
+  --modal-bg-color: rgba(0, 0, 0, 0.5);
   --error-bg-color: #ecbbcb;
   --error-text-color: #b32451;
-  --progress-bar-trail-color: #e0e5f1;
+  --progress-bar-trail-color: #d3eaf8;
   --shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 

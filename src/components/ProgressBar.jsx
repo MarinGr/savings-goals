@@ -20,4 +20,5 @@ export default function ProgressBar({ progress }) {
 const ProgressBarStyled = styled(CircularProgressbar)`
   width: 100px;
   height: 100px;
+  font-weight: 600;
 `;

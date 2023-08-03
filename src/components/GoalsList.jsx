@@ -41,13 +41,13 @@ const NoGoalsContainer = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
 `;
 
 const Container = styled.div`
   margin: 0 auto;
   max-width: 1440px;
-  background-color: #fff;
+  background-color: var(--white);
   padding: 36px;
   display: flex;
   gap: 36px;
