@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/savings-goals/static/css/main.b9b68f77.css",
-    "main.js": "/savings-goals/static/js/main.a1d57ba7.js",
+    "main.css": "/savings-goals/static/css/main.f6eba1f7.css",
+    "main.js": "/savings-goals/static/js/main.58b4e1dd.js",
     "index.html": "/savings-goals/index.html",
-    "main.b9b68f77.css.map": "/savings-goals/static/css/main.b9b68f77.css.map",
-    "main.a1d57ba7.js.map": "/savings-goals/static/js/main.a1d57ba7.js.map"
+    "main.f6eba1f7.css.map": "/savings-goals/static/css/main.f6eba1f7.css.map",
+    "main.58b4e1dd.js.map": "/savings-goals/static/js/main.58b4e1dd.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9b68f77.css",
-    "static/js/main.a1d57ba7.js"
+    "static/css/main.f6eba1f7.css",
+    "static/js/main.58b4e1dd.js"
   ]
 }
