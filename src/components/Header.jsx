@@ -44,7 +44,7 @@ const Title = styled.h1`
 
 const AddBtn = styled.button`
   position: absolute;
-  right: 40px;
+  right: 100px;
   bottom: 20px;
   padding: 8px 32px;
   font-size: 16px;
